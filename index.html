@@ -1,609 +1,465 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4G5DVR6FCK"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4G5DVR6FCK');</script>
+  <!-- Clarity -->
+  <script type="text/javascript">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","lb9967r49a");</script>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4G5DVR6FCK"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diaby Aboubacar Sidik — Expert Réseaux & Cybersécurité, Développeur Full-Stack, Master ERIS à Abidjan.">
+  <meta property="og:title" content="Diaby Aboubacar Sidik | Cybersécurité & Réseaux" />
+  <meta property="og:description" content="Portfolio de Diaby Aboubacar Sidik — Expert Réseaux, Sécurité & Dev Full-Stack." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://diaby-engineer.vercel.app/" />
 
-  gtag('config', 'G-4G5DVR6FCK');
-</script>
-    <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "lb9967r49a");
-</script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Diaby Aboubacar Sidik présentant ses projets, ses compétences et ses coordonnées.">
-
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Portfolio de Diaby Aboubacar Sidik" />
-    <meta property="og:description" content="Portfolio de Diaby Aboubacar Sidik présentant ses projets, ses compétences et ses coordonnées." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://diaby-engineer.vercel.app/" />
-
-    <title>Diaby</title>
-    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
-
-    <!-- Favicons (compatibilité maximale) -->
-    <!-- <link rel="icon" href="assets/cyber.svg" type="image/svg+xml"> -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-    <link rel="manifest" href="assets/site.webmanifest"> <!-- Pour PWA -->
-
-    <!-- Feuilles de style -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Polices Google -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Audiowide&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
-
+  <title>0xSidik | Cybersécurité & Réseaux</title>
+  <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Background layers -->
+  <canvas id="particles-canvas"></canvas>
+  <div class="grid-bg"></div>
 
-    <section id="header">
-        <div class="navbar-title">
-            <h3 class="title-first-name">Diaby</h3>
-        </div>
-        <button id="menu-toggle" class="menu-toggle">
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="navbar-menu-container">
-            <ul class="navbar-menu">
-                <li><a href="#aboutme">À propos</a></li>
-                <li><a href="#research">Expériences</a></li>
-                <li><a href="#education">Formation</a></li>
-                <li><a href="#introduction">Derniers projets</a></li>
-                <li><a href="#skill">Compétences</a></li>
-                <li><a href="#footer">Contacts</a></li>
-            </ul>
-        </div>
-        <div class="social-media-container">
-            <ul class="social-media">
-                <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/2250101566593" target="_blank" rel="noopener noreferrer">Whatsapp</a></li>
-                <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/0xsidik" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><i class="fa-brands fa-github"></i><a href="https://github.com/0xSidik" target="_blank" rel="noopener noreferrer">Github</a></li>
-                <li><i class="fa-regular fa-envelope"></i><a href="mailto:aboubacarsidikdiaby5@gmail.com">Email</a></li>
-            </ul>
-        </div>
-    </section>
-    
-    
-    <section id="announcement-banner">
-        <p>Annonce récente : <strong>🎓 Étudiant en master 1 ERIS – Expert Réseaux, Infrastructures et Sécurité. Je recherche un stage de 3 mois à partir de Juin 2026.
-        </strong> - Explorer mon profil!</p>
-    </section>
-    <section id="content-body">
-        <div class="body-part-1">
-            <div class="developer-intro">
-                <p>Expert Réseaux & Sécurité</p>
-                <p>Développeur Full-Stack</p>
-                <p>Passionné de cybersécurité</p>
-            </div><br>
-            <h2><span id="greetingText">Restez en sécurité contre le cyber</span></h2>
-            <div class="body-title">
-                <h1>Diaby Aboubacar Sidik<br>Jeune IT polyvalent</h1>
-                <p>Créer un avenir numérique sécurisé et centré sur l'utilisateur.<br>
-                Alliant expertise en réseaux, développement web et passion pour la cybersécurité,<br>
-                je conçois des solutions innovantes pour protéger les données et optimiser les systèmes.<br>
-                Rejoignez-moi dans cette aventure technologique !
-                </p>
-            </div>
-            <div class="body-tail">
-            <div>
-                <h1>1</h1>
-                <p>EXPERIENCES<br>OBTENUES</p>
-            </div>
-            <div>
-                <h1>+5</h1>
-                <p>PROJETS<br>COMPLÉTÉS</p>
-            </div>
-            <div class="cv-download">
-                <a href="assets\AboubacarSidikDiabyCv.pdf" download class="download-btn">
-                    <i class="fa-solid fa-download"></i> Télécharger mon CV
-                </a>
-            </div>
-        </div>
+  <!-- Mobile nav overlay -->
+  <nav class="mobile-nav-overlay" id="mobile-overlay">
+    <button class="mobile-close" id="mobile-close"><i class="fa-solid fa-xmark"></i></button>
+    <ul class="navbar-menu">
+      <li><a href="#aboutme">À propos</a></li>
+      <li><a href="#research">Expériences</a></li>
+      <li><a href="#education">Formation</a></li>
+      <li><a href="#introduction">Projets</a></li>
+      <li><a href="#skill">Compétences</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+    <ul class="social-media">
+      <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/2250101566593" target="_blank">Whatsapp</a></li>
+      <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/0xsidik" target="_blank">LinkedIn</a></li>
+      <li><i class="fa-brands fa-github"></i><a href="https://github.com/0xSidik" target="_blank">Github</a></li>
+    </ul>
+  </nav>
 
-        </div>
-        <div class="body-part-2">
-            <div class="container">
-                
-                <div class="svg-animation">
-                    <img src="assets/cyber.svg" alt="Cyber SVG" class="responsive-svg">
-                </div>
-                
-            </div>
-        </div>
-         
-    </section>
-
-    <section id="aboutme">
-        <div class="body-part-2">
-            <div class="container">
-                
-                <div class="svg-animation">
-                    <img src="assets/who.svg" alt="Who SVG" class="responsive-svg">
-                </div>
-              
-                
-                
-              </div>
-            </div>
-        <div class="body-part-1">
-            <div class="body-title">
-                
-                <h1>Qui suis-je ?</h1>
-                <p>
-                Je m’appelle <strong>Diaby Aboubacar Sidik</strong>, passionné par les <strong>réseaux</strong>, 
-                le <strong>développement web</strong> et la <strong>cybersécurité</strong>.<br>
-                Actuellement étudiant en <strong>Master Expert Réseaux, Infrastructures et Sécurité</strong>, 
-                j’ai acquis de l’expérience en <em>administration systèmes & réseaux</em>, 
-                <em>sécurité informatique</em> et <em>développement Full-Stack (JavaScript & Python)</em>.<br>
-                J’ai travaillé sur la mise en place de <strong>pare-feu NGFW</strong>, la gestion 
-                d’<strong>Active Directory</strong>, la <strong>virtualisation</strong> et l’assistance utilisateurs, 
-                tout en développant des solutions web performantes et sécurisées.<br>
-                Je m’intéresse particulièrement aux <strong>SIEM</strong>, au <strong>Cloud</strong> 
-                et aux nouvelles tendances en cybersécurité.<br>
-                Curieux et motivé, je cherche à mettre mes compétences au service 
-                de projets innovants tout en continuant à progresser.<br>
-                Rejoignez-moi dans cette aventure technologique !
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="research" style="background-color: #2d2e3273;">
-        <div style="display: flex; position: relative; justify-content: space-between; padding: 100px 40px; min-height: 95vh; align-items: center; width: 100%;">
-            <div class="heading-container" style="flex-basis: 100%;">
-                <h3 class="section-heading techy-title">Expériences</h3>
-                <p class="creative-title">Missions réalisées en entreprise</p>
-            </div>
-            <div class="cards-container">
-                <div class="cards">
-                    <div class="design-card">
-                        <div>
-                           <h3><i class="fa-solid fa-network-wired"></i> Stagiaire Réseaux & Sécurité</h3>
-                        </div>
-                        <p>
-                            Port Autonome de San Pedro – Représentation Abidjan<br>
-                            <strong>Période :</strong> Nov. 2024 – Fév. 2025<br><br>
-                            Participation à l’installation et la configuration de pare-feux NGFW, 
-                            à la réalisation de tests d’intrusion, et à la mise en place de politiques de sécurité informatique. 
-                            Contribution au suivi et à l’analyse via SIEM, ainsi qu’à la surveillance continue du réseau 
-                            afin d’assurer la disponibilité et la protection des infrastructures.
-                        </p>
-                        <a href="https://sanpedro-portci.com/" target="_blank">Voir Détails</a>
-                    </div>
-                    <div class="design-card">
-                    <div>
-                       <h3><i class="fa-solid fa-server"></i> Stagiaire Administrateur Systèmes & Réseaux Junior</h3>
-                    </div>
-                    <p>
-                        Haupt Markt<br>
-                        <strong>Période :</strong> Juil. 2023 – Déc. 2023<br><br>
-                        Participation à l’installation et la promotion d’Active Directory, 
-                        avec création d’unités d’organisation (UO) et de stratégies de groupe (GPO). 
-                        Mise en place et gestion de serveurs DHCP, DNS, WDS et IIS, 
-                        ainsi que de solutions de sauvegarde et de restauration. 
-                        Expérience en virtualisation sur Hyper-V et automatisation de tâches via scripts. 
-                        Implication dans la configuration et le dépannage d’équipements réseau 
-                        (TCP/IP, routeurs, commutateurs, pare-feu). 
-                        Assistance technique aux utilisateurs et développement d’un site web 
-                        avec le CMS WordPress : <a href="https://hauptmarkt.ci/" target="_blank">hauptmarkt.ci</a>.
-                    </p>
-
-                    <a href="https://hauptmarkt.ci/" target="_blank">Voir Détails</a>
-                </div>
-                <div class="design-card">
-                <div>
-                   <h3><i class="fa-solid fa-wifi"></i> Stagiaire Technicien Réseaux Informatiques</h3>
-                </div>
-                <p>
-                    Kip Services et Technologies<br>
-                    <strong>Période :</strong> Fév. 2023 – Mai 2023<br><br>
-                    Contribution à l’installation de pylônes réseaux (ST15, ST35, etc.) 
-                    et à la mise en place de liaisons point à point et point à multipoint. 
-                    Réalisation de projets de vidéosurveillance et configuration de points d’accès Wi-Fi. 
-                    Participation aux travaux de câblage réseau et à l’intégration de solutions portables 
-                    pour renforcer la connectivité et la performance des infrastructures.
-                </p>
-                <a href="https://www.ekiptech.com/" target="_blank">Voir Détails</a>
-            </div>
-
-
-                </div>
-            </div>
-            <div class="image-container">
-                <div class="body-part-2">
-                    <div class="container">
-                        <div class="svg-animation">
-                            <img src="assets/research.svg" alt="Research SVG" class="responsive-svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education" style="background-color: #25262a;">
-    <div style="display: flex; position: relative; justify-content: space-between; padding: 100px 40px; min-height: 95vh; align-items: center; width: 100%;">
-        <div class="heading-container" style="flex-basis: 100%;">
-            <h3 class="section-heading techy-title">Formation</h3>
-            <p class="creative-title">Parcours académique</p>
-        </div>
-        <div class="cards-container">
-            <div class="cards">
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-graduation-cap"></i> Master Experts Réseaux, Infrastructures et Sécurité (ERIS)</h3>
-                    </div>
-                    <p>
-                        ESATIC – École Supérieure Africaine des TIC<br>
-                        <strong>Période :</strong> 2025 – 2027 (en cours)<br><br>
-                        Formation spécialisée dans la conception, l’architecture et la sécurisation des systèmes 
-                        d’information. Développement de compétences avancées en réseaux, infrastructures, cybersécurité 
-                        et management des risques SI, avec une approche orientée projet et professionnalisation.
-                    </p>
-                </div>
-
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-graduation-cap"></i> Licence Professionnelle Réseaux Génie Logiciel (RGL)</h3>
-                    </div>
-                    <p>
-                        PIGIER Côte d'Ivoire<br>
-                        <strong>Période :</strong> 2023 – 2024<br><br>
-                        Approfondissement des connaissances en réseaux et génie logiciel, avec des projets pratiques en administration système, sécurité et développement d’applications.
-                    </p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-graduation-cap"></i> Brevet de Technicien Supérieur (BTS) Option Réseaux Informatiques et Télécommunications (RIT)</h3>
-                    </div>
-                    <p>
-                        École Supérieure de Technologie (EST LOKO)<br>
-                        <strong>Période :</strong> 2020 – 2022<br><br>
-                        Formation complète en réseaux informatiques, télécommunications et gestion des infrastructures IT, incluant des projets pratiques et stages en entreprise.
-                    </p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-graduation-cap"></i> Baccalauréat Série Scientifique (BAC D)</h3>
-                    </div>
-                    <p>
-                        Cours Loko de Marcory<br>
-                        <strong>Période :</strong> 2019 – 2020<br><br>
-                        Formation scientifique générale, base solide en mathématiques et sciences, préparation à l’enseignement supérieur en technologies et informatique.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="body-part-2">
-                <div class="container">
-                    <div class="svg-animation">
-                        <img src="assets/education.svg" alt="Education SVG" class="responsive-svg">
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Header -->
+  <section id="header">
+    <div class="navbar-title">
+      <h3 class="title-first-name">Sidik</h3>
     </div>
-</section>
-
-    <section id="introduction" style="background-color: #2d2e3273;">
-        <div class="heading-container">
-            <h3 class="section-heading techy-title">Derniers projets</h3>
-            <p class="creative-title">Des solutions parfaites pour l'expérience numérique</p>
-        </div>
-        <div style="display: flex; position: relative; justify-content: space-between; padding: 100px 40px; min-height: 95vh; align-items: center; width: 100%;">
-            <div class="image-container">
-                <div class="body-part-2">
-                    <div class="container">
-                        <div class="svg-animation">
-                            <img src="assets/project.svg" alt="Project SVG" class="responsive-svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Cartes projets -->
-            <div class="cards-container">
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-mug-hot"></i> CoffeeApp: Training Flutter/Dart</h3>
-                    </div>
-                    <p>CoffeeApp est une application d’entraînement réalisée avec Flutter et Dart. Conçue pour le plaisir d’apprendre et d’expérimenter, elle illustre l’utilisation de widgets modernes, la gestion des états et l’architecture mobile multiplateforme.</p>
-                    <a href="https://github.com/0xSidik/coffeeapp" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-server"></i> Active Directory</h3>
-                    </div>
-                    <p>Déploiement d’un contrôleur de domaine (AD DS) sous Windows Server. 
-                    Création du domaine <strong>diath.local</strong>, mise en place des unités organisationnelles (OU) 
-                    pour chaque département et intégration des postes clients au domaine.</p>
-                    <a href="https://github.com/0xSidik/ActiveDirectory-Deployment" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-shield-halved"></i> Supervision & Sécurité Réseau</h3>
-                    </div>
-                    <p>Mise en place d’une infrastructure de supervision basée sur la 
-                    <strong>stack ELK (Elasticsearch, Logstash, Kibana)</strong> : surveillance du trafic via Packetbeat, 
-                    analyse des journaux Windows et Linux avec Winlogbeat / Filebeat et détection d’activités suspectes 
-                    avec alertes IDS.</p>
-                    <a href="https://github.com/0xSidik/ELKStack-Monitoring" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-diagram-project"></i> Architecture PME</h3>
-                    </div>
-                    <p>Conception d’une architecture réseau et système haute disponibilité (HA) pour une PME de 150 utilisateurs 
-                    répartis sur 4 sites. Virtualisation avec <strong>VMware / Proxmox</strong>, cluster de serveurs HCI, 
-                    site de reprise après sinistre (DR) et interconnexion sécurisée via VPN IPSec.</p>
-                    <a href= "https://github.com/0xSidik/Architecture-PME-HA" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="cards">
-                    <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-address-card"></i> BusinessCardApp: Digital Business Card Application</h3>
-                    </div>
-                    <p>BusinessCardApp est une application de carte de visite développée en Kotlin avec Jetpack Compose. Elle permet de créer, gérer et partager des cartes de visite numériques de manière rapide et intuitive, offrant une solution moderne et efficace pour les professionnels souhaitant centraliser leurs contacts.</p>
-                    <a href="https://github.com/0xSidik/BusinessCardApp" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-network-wired"></i> VPN IPsec / SSL</h3>
-                    </div>
-                    <p>Configuration d’un <strong>VPN IPsec site-à-site</strong> et d’un <strong>VPN SSL clientless</strong> 
-                    sur Cisco Packet Tracer. Mise en œuvre de la connectivité sécurisée entre sites distants.</p>
-                    <a href="https://github.com/0xSidik/VPN-IPSec-SSL-Cisco" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-route"></i> Routage BGP, IS-IS, RIP, EIGRP, OSPF</h3>
-                    </div>
-                    <p>Implémentation des protocoles de routage <strong>EGP et IGP</strong> sur Cisco Packet Tracer 
-                    et GNS3 : configuration et test des protocoles <strong>BGP, IS-IS, RIP, EIGRP et OSPF</strong> 
-                    pour assurer la connectivité et la redondance réseau.</p>
-                    <a href="https://github.com/0xSidik/Routing-Protocols-Lab" target="_blank">Voir Détails</a>
-                </div>
-
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-graduation-cap"></i> ResultApp: Exam Results at a Glance</h3>
-                    </div>
-                    <p>Une application Windows qui permet aux étudiants de consulter rapidement leurs résultats d'examen national via leur matricule, en se connectant directement à une base de données MySQL.</p>
-                    <a href="https://github.com/0xSidik/ResultApp" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-file-lines"></i> MonMemoire: Student Thesis Tracking</h3>
-                    </div>
-                    <p>MonMemoire est une application web permettant aux étudiants de PIGIER de soumettre une demande de suivi d’encadrement de mémoire. Elle facilite la gestion des projets de recherche et assure un suivi structuré entre étudiants et encadrants.</p>
-                    <a href="https://github.com/0xSidik/MemoireApp" target="_blank">Voir Détails</a>
-                </div>
-
-                  
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-shop"></i> Haupt Markt: Company Website & Online Store</h3>
-                    </div>
-                    <p>Création du site web de l'entreprise Haupt Markt avec le CMS WordPress, comprenant un site vitrine et une boutique en ligne. Le projet permet de présenter l’entreprise et ses services tout en offrant une plateforme de vente moderne et fonctionnelle.</p>
-                    <a href="https://hauptmarkt.ci/" target="_blank">Voir Détails</a>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-calculator"></i> Mini Calculator: Basic Arithmetic in C</h3>
-                    </div>
-                    <p>Réalisation d'une mini calculatrice en langage C permettant à l’utilisateur d’effectuer des opérations de base comme l’addition, la soustraction, la multiplication et la division, en saisissant deux nombres et en choisissant l’opération souhaitée.</p>
-                    <!-- <a href="#" target="_blank">Voir Détails</a> --> 
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-shield-halved"></i> Windows Penetration Testing with Python</h3>
-                    </div>
-                    <p>Réalisation de tests d'intrusion sur Windows, utilisant des outils et des scripts Python pour simuler des attaques. L’objectif est d’évaluer les vulnérabilités du système face aux menaces externes et d’identifier les points à renforcer en matière de sécurité.</p>
-                    <!-- <a href="#" target="_blank">Voir Détails</a> --> 
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-network-wired"></i> Cybercafé Network Setup</h3>
-                    </div>
-                    <p>Mise en place du réseau d'un cybercafé, configuration des postes utilisateurs et mise en route de l'imprimante réseau. Ce projet permet d’assurer une connectivité fluide et une gestion efficace des ressources partagées pour les utilisateurs.</p>
-                </div>
-
-
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End of Projects section -->
-
-   <section id="skill" style="background-color: #25262a;">
-    <div class="heading-container">
-        <h3 class="section-heading techy-title">Compétences</h3>
-        <p class="creative-title">Expertise technique et outils professionnels</p>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="navbar-menu-container">
+      <ul class="navbar-menu">
+        <li><a href="#aboutme">À propos</a></li>
+        <li><a href="#research">Expériences</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#introduction">Projets</a></li>
+        <li><a href="#skill">Compétences</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
     </div>
-
-    <div style="display: flex; position: relative; justify-content: space-between; padding: 100px 40px; min-height: 95vh; align-items: center; width: 100%;">
-        <div class="cards-container">
-            <div class="cards">
-
-                <div class="design-card">
-                    <div>
-                       <h3><i class="fa-solid fa-server"></i> Systèmes & Virtualisation</h3>
-                    </div>
-                    <p>Linux (Ubuntu, Cent OS, Kali) • Windows Server • VMware • VirtualBox • Hyper-V</p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-network-wired"></i> Réseaux & Protocoles</h3>
-                    </div>
-                    <p>TCP/IP • VLAN • VPN • BGP • OSPF • IS-IS • DHCP • DNS • Pare-feu (Cisco ASA, Fortinet) • GNS3 • EVE-NG • Wireshark</p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-shield-halved"></i> Sécurité & Cybersécurité</h3>
-                    </div>
-                    <p>Audit & PSSI • Pentesting (Nmap, Metasploit, Burp Suite) • IDS/IPS • SIEM (Wazuh, ELK Stack) • PRA/PCA • Sécurité réseau</p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
-                    </div>
-                    <p>Docker • Kubernetes • AWS • CI/CD (Jenkins, GitLab CI) • Git</p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-database"></i> Bases de Données & Scripting</h3>
-                    </div>
-                    <p>MySQL • PostgreSQL • MongoDB • PowerShell • Bash • Python</p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                        <h3><i class="fa-solid fa-code"></i> Développement & Frameworks</h3>
-                    </div>
-                    <p>HTML • CSS • JavaScript • Java • C/C++ • Kotlin • React JS • Node.js • Django • Flutter • Laravel</p>
-                </div>
-
-                <div class="design-card">
-                    <div>
-                       <h3><i class="fa-solid fa-chart-line"></i> Supervision & Gestion IT</h3>
-                    </div>
-                    <p>GLPI • Zabbix • Centreon • ITSM • Reporting & gestion des SLA</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="image-container">
-            <div class="body-part-2">
-                <div class="container">
-                    <div class="svg-animation">
-                        <img src="assets/skill.svg" alt="Skill SVG" class="responsive-svg">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="social-media-container">
+      <ul class="social-media">
+        <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/2250101566593" target="_blank" rel="noopener">Whatsapp</a></li>
+        <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/0xsidik" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><i class="fa-brands fa-github"></i><a href="https://github.com/0xSidik" target="_blank" rel="noopener">Github</a></li>
+        <li><i class="fa-regular fa-envelope"></i><a href="mailto:aboubacarsidikdiaby5@gmail.com">Email</a></li>
+      </ul>
     </div>
-</section>
+  </section>
 
-<section id="footer" style="background-color: #2d2e3273">
+  <!-- Banner -->
+  <section id="announcement-banner">
+    <p>🎓 Master 1 ERIS – Expert Réseaux, Infrastructures & Sécurité &nbsp;|&nbsp; <strong>Recherche un stage de 3 mois à partir de Juin 2026</strong> &nbsp;|&nbsp; Explore mon profil !</p>
+  </section>
+
+  <!-- HERO -->
+  <section id="content-body">
+    <div class="body-part-1">
+      <div class="developer-intro reveal">
+        <p>Expert Réseaux</p>
+        <p>Cybersécurité</p>
+        <p>Développeur Full-Stack</p>
+      </div>
+      <h2 class="reveal"><span id="greetingText">Stay safe from cyber</span><span class="cursor-blink"></span></h2>
+      <div class="body-title reveal">
+        <h1>Diaby <span class="hero-name">Aboubacar</span><br>Sidik</h1>
+        <p>Créer un avenir numérique sécurisé et centré sur l'utilisateur. Alliant expertise en réseaux, développement web et passion pour la cybersécurité, je conçois des solutions innovantes pour protéger les données et optimiser les systèmes.</p>
+      </div>
+      <div class="body-tail reveal">
+        <div class="stat-block">
+          <h1>1</h1>
+          <p>Expérience<br>obtenue</p>
+        </div>
+        <div class="stat-block">
+          <h1>+5</h1>
+          <p>Projets<br>complétés</p>
+        </div>
+        <div class="cv-download">
+          <a href="assets/AboubacarSidikDiabyCv.pdf" download class="download-btn">
+            <i class="fa-solid fa-download"></i> Télécharger CV
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="body-part-2 reveal-right">
+      <div class="container">
+        <div class="svg-animation">
+          <img src="assets/cyber.svg" alt="Cybersécurité" class="responsive-svg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME -->
+  <section id="aboutme">
+    <div class="body-part-2 reveal-left">
+      <div class="container">
+        <div class="svg-animation">
+          <img src="assets/who.svg" alt="About Me" class="responsive-svg">
+        </div>
+      </div>
+    </div>
+    <div class="body-part-1 reveal-right">
+      <div class="section-label">Qui suis-je</div>
+      <h2 class="section-main-heading">À propos de moi</h2>
+      <p class="section-sub">// background.sh</p>
+      <div class="aboutme-text">
+        <p>Je m'appelle <strong>Diaby Aboubacar Sidik</strong>, passionné par les <strong>réseaux</strong>, le <strong>développement web</strong> et la <strong>cybersécurité</strong>.</p>
+        <p>Actuellement étudiant en <strong>Master Expert Réseaux, Infrastructures et Sécurité</strong>, j'ai acquis de l'expérience en <em>administration systèmes & réseaux</em>, <em>sécurité informatique</em> et <em>développement Full-Stack (JavaScript & Python)</em>.</p>
+        <p>J'ai travaillé sur la mise en place de <strong>pare-feu NGFW</strong>, la gestion d'<strong>Active Directory</strong>, la <strong>virtualisation</strong> et l'assistance utilisateurs, tout en développant des solutions web performantes et sécurisées.</p>
+        <p>Je m'intéresse particulièrement aux <strong>SIEM</strong>, au <strong>Cloud</strong> et aux nouvelles tendances en cybersécurité. Curieux et motivé, je cherche à mettre mes compétences au service de projets innovants.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCES -->
+  <section id="research">
+    <div class="section-header-block reveal">
+      <div class="section-label">Parcours professionnel</div>
+      <h2 class="section-main-heading">Expériences</h2>
+      <p class="section-sub">// work_history.log</p>
+    </div>
+    <div class="section-inner">
+      <div class="cards-container">
+        <div class="cards-scroll">
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-network-wired"></i> Stagiaire Réseaux & Sécurité</h3></div>
+            <p>Port Autonome de San Pedro – Représentation Abidjan<br>
+            <strong>Période :</strong> Nov. 2024 – Fév. 2025<br><br>
+            Installation et configuration de pare-feux NGFW, tests d'intrusion, politiques de sécurité informatique. Suivi et analyse via SIEM, surveillance continue du réseau.</p>
+            <a href="https://sanpedro-portci.com/" target="_blank">Voir Détails</a>
+          </div>
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-server"></i> Stagiaire Admin Systèmes & Réseaux Junior</h3></div>
+            <p>Haupt Markt<br>
+            <strong>Période :</strong> Juil. 2023 – Déc. 2023<br><br>
+            Installation Active Directory, gestion UO & GPO. Serveurs DHCP, DNS, WDS, IIS, virtualisation Hyper-V, automatisation par scripts, dépannage réseau, site WordPress.</p>
+            <a href="https://hauptmarkt.ci/" target="_blank">Voir Détails</a>
+          </div>
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-wifi"></i> Stagiaire Technicien Réseaux Informatiques</h3></div>
+            <p>Kip Services et Technologies<br>
+            <strong>Période :</strong> Fév. 2023 – Mai 2023<br><br>
+            Installation de pylônes réseaux (ST15, ST35), liaisons point à point et multipoint, vidéosurveillance, configuration Wi-Fi, câblage réseau.</p>
+            <a href="https://www.ekiptech.com/" target="_blank">Voir Détails</a>
+          </div>
+        </div>
+      </div>
+      <div class="image-container reveal-right">
+        <div class="container">
+          <div class="svg-animation">
+            <img src="assets/research.svg" alt="Expériences" class="responsive-svg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section id="education">
+    <div class="section-header-block reveal">
+      <div class="section-label">Parcours académique</div>
+      <h2 class="section-main-heading">Formation</h2>
+      <p class="section-sub">// education.db</p>
+    </div>
+    <div class="section-inner reverse">
+      <div class="image-container reveal-left">
+        <div class="container">
+          <div class="svg-animation">
+            <img src="assets/education.svg" alt="Formation" class="responsive-svg">
+          </div>
+        </div>
+      </div>
+      <div class="cards-container">
+        <div class="education-timeline">
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-graduation-cap"></i> Master ERIS – Expert Réseaux, Infrastructures & Sécurité</h3></div>
+            <p>ESATIC – École Supérieure Africaine des TIC<br>
+            <strong>Période :</strong> 2025 – 2027 (en cours)<br><br>
+            Formation avancée en conception, architecture et sécurisation des SI. Cybersécurité, management des risques, approche projet & professionnalisation.</p>
+          </div>
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-graduation-cap"></i> Licence Pro Réseaux Génie Logiciel (RGL)</h3></div>
+            <p>PIGIER Côte d'Ivoire<br>
+            <strong>Période :</strong> 2023 – 2024<br><br>
+            Approfondissement réseaux et génie logiciel, projets pratiques en administration système, sécurité et développement d'applications.</p>
+          </div>
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-graduation-cap"></i> BTS – Réseaux Informatiques & Télécommunications (RIT)</h3></div>
+            <p>École Supérieure de Technologie (EST LOKO)<br>
+            <strong>Période :</strong> 2020 – 2022<br><br>
+            Formation complète en réseaux, télécommunications et gestion des infrastructures IT, avec projets pratiques et stages en entreprise.</p>
+          </div>
+          <div class="design-card stagger reveal">
+            <div><h3><i class="fa-solid fa-graduation-cap"></i> Baccalauréat Scientifique (BAC D)</h3></div>
+            <p>Cours Loko de Marcory<br>
+            <strong>Période :</strong> 2019 – 2020<br><br>
+            Base solide en mathématiques et sciences, préparation à l'enseignement supérieur en technologies et informatique.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="introduction">
+    <div class="section-header-block reveal">
+      <div class="section-label">Portfolio technique</div>
+      <h2 class="section-main-heading">Derniers projets</h2>
+      <p class="section-sub">// projects --list --all</p>
+    </div>
+    <div class="projects-grid">
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-shield-halved"></i> Supervision & Sécurité Réseau</h3></div>
+        <p>Stack ELK (Elasticsearch, Logstash, Kibana) : surveillance trafic via Packetbeat, analyse logs Windows/Linux, détection activités suspectes avec alertes IDS.</p>
+        <a href="https://github.com/0xSidik/ELKStack-Monitoring" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-server"></i> Active Directory Deployment</h3></div>
+        <p>Déploiement contrôleur de domaine (AD DS) sous Windows Server. Domaine <strong>diath.local</strong>, unités organisationnelles par département, intégration postes clients.</p>
+        <a href="https://github.com/0xSidik/ActiveDirectory-Deployment" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-diagram-project"></i> Architecture PME Haute Dispo</h3></div>
+        <p>Architecture réseau HA pour PME de 150 utilisateurs, 4 sites. Virtualisation VMware/Proxmox, cluster HCI, site DR, VPN IPSec inter-sites.</p>
+        <a href="https://github.com/0xSidik/Architecture-PME-HA" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-network-wired"></i> VPN IPsec / SSL Cisco</h3></div>
+        <p>Configuration VPN IPSec site-à-site et VPN SSL clientless sur Cisco Packet Tracer. Connectivité sécurisée entre sites distants.</p>
+        <a href="https://github.com/0xSidik/VPN-IPSec-SSL-Cisco" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-route"></i> Routage BGP, IS-IS, OSPF, RIP, EIGRP</h3></div>
+        <p>Implémentation protocoles EGP et IGP sur Cisco Packet Tracer et GNS3. Configuration et test de BGP, IS-IS, RIP, EIGRP, OSPF.</p>
+        <a href="https://github.com/0xSidik/Routing-Protocols-Lab" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-mug-hot"></i> CoffeeApp – Flutter/Dart</h3></div>
+        <p>Application d'entraînement réalisée avec Flutter et Dart. Widgets modernes, gestion des états et architecture mobile multiplateforme.</p>
+        <a href="https://github.com/0xSidik/coffeeapp" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-address-card"></i> BusinessCardApp – Kotlin</h3></div>
+        <p>Application de carte de visite numérique en Kotlin avec Jetpack Compose. Créer, gérer et partager des cartes de visite rapidement.</p>
+        <a href="https://github.com/0xSidik/BusinessCardApp" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-graduation-cap"></i> ResultApp – Résultats d'examen</h3></div>
+        <p>Application Windows permettant aux étudiants de consulter leurs résultats d'examen national via matricule, connectée à une base MySQL.</p>
+        <a href="https://github.com/0xSidik/ResultApp" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-file-lines"></i> MonMemoire – Suivi de thèses</h3></div>
+        <p>Application web pour les étudiants de PIGIER pour soumettre des demandes de suivi d'encadrement. Gestion structurée étudiants/encadrants.</p>
+        <a href="https://github.com/0xSidik/MemoireApp" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-shop"></i> Haupt Markt – Site & E-commerce</h3></div>
+        <p>Site vitrine et boutique en ligne pour Haupt Markt avec WordPress. Plateforme de vente moderne et fonctionnelle.</p>
+        <a href="https://hauptmarkt.ci/" target="_blank">Voir Détails</a>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-shield-halved"></i> Windows Penetration Testing</h3></div>
+        <p>Tests d'intrusion sur Windows utilisant des outils et scripts Python pour simuler des attaques et évaluer les vulnérabilités système.</p>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-network-wired"></i> Cybercafé Network Setup</h3></div>
+        <p>Mise en place du réseau d'un cybercafé, configuration des postes utilisateurs et imprimante réseau. Connectivité fluide et gestion des ressources partagées.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skill">
+    <div class="section-header-block reveal">
+      <div class="section-label">Expertise technique</div>
+      <h2 class="section-main-heading">Compétences</h2>
+      <p class="section-sub">// skills --verbose</p>
+    </div>
+    <div class="skills-grid">
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-shield-halved"></i> Sécurité & Cybersécurité</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Audit & PSSI</span>
+          <span class="skill-tag">Pentesting</span>
+          <span class="skill-tag">Nmap</span>
+          <span class="skill-tag">Metasploit</span>
+          <span class="skill-tag">Burp Suite</span>
+          <span class="skill-tag">IDS/IPS</span>
+          <span class="skill-tag">SIEM Wazuh</span>
+          <span class="skill-tag">ELK Stack</span>
+          <span class="skill-tag">PRA/PCA</span>
+        </div>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-network-wired"></i> Réseaux & Protocoles</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">TCP/IP</span>
+          <span class="skill-tag">VLAN</span>
+          <span class="skill-tag">VPN</span>
+          <span class="skill-tag">BGP</span>
+          <span class="skill-tag">OSPF</span>
+          <span class="skill-tag">IS-IS</span>
+          <span class="skill-tag">DHCP</span>
+          <span class="skill-tag">DNS</span>
+          <span class="skill-tag">Cisco ASA</span>
+          <span class="skill-tag">Fortinet</span>
+          <span class="skill-tag">GNS3</span>
+          <span class="skill-tag">Wireshark</span>
+        </div>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-server"></i> Systèmes & Virtualisation</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Linux (Ubuntu/Kali)</span>
+          <span class="skill-tag">Windows Server</span>
+          <span class="skill-tag">VMware</span>
+          <span class="skill-tag">VirtualBox</span>
+          <span class="skill-tag">Hyper-V</span>
+          <span class="skill-tag">Active Directory</span>
+        </div>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">GitLab CI</span>
+          <span class="skill-tag">Git</span>
+        </div>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-code"></i> Développement & Frameworks</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React JS</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Django</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Laravel</span>
+        </div>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-database"></i> Bases de Données & Scripting</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">PowerShell</span>
+          <span class="skill-tag">Bash</span>
+          <span class="skill-tag">Python</span>
+        </div>
+      </div>
+      <div class="design-card stagger reveal">
+        <div><h3><i class="fa-solid fa-chart-line"></i> Supervision & Gestion IT</h3></div>
+        <div class="skill-tags">
+          <span class="skill-tag">GLPI</span>
+          <span class="skill-tag">Zabbix</span>
+          <span class="skill-tag">Centreon</span>
+          <span class="skill-tag">ITSM</span>
+          <span class="skill-tag">SLA Reporting</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER / CONTACT -->
+  <section id="footer">
     <div class="footer-container">
-        <div class="footer-left">
-            <form action="https://formspree.io/f/mzzjkbae" method="POST">
-                <h2 class="techy-title">Créons quelque chose d'extraordinaire ensemble</h2>
-                <div class="email-form">
-                    <h2 class="creative-title">Commencer par <span>dire bonjour</span></h2>
-                    <label for="name">Votre nom</label>
-                    <input type="text" name="name" id="name" placeholder="Your name" required>
-                    <label for="email">Adresse email</label>
-                    <input type="email" name="email" id="email" placeholder="Email Address" required>
-                    <div>
-                        <label for="message" class="message-label">Message</label>
-                        <textarea name="message" id="message" placeholder="Message" required></textarea>
-                        <button type="submit">Envoyer</button>
-                    </div>
-                </div>
-            </form>
+      <div class="footer-left reveal-left">
+        <h2>Créons quelque chose<br>d'<span>extraordinaire</span> ensemble</h2>
+        <form action="https://formspree.io/f/mzzjkbae" method="POST" class="email-form">
+          <div class="form-row">
+            <div>
+              <label for="name">Votre nom</label>
+              <input type="text" name="name" id="name" placeholder="Jean Dupont" required>
+            </div>
+            <div>
+              <label for="email">Adresse email</label>
+              <input type="email" name="email" id="email" placeholder="jean@exemple.com" required>
+            </div>
+          </div>
+          <label for="message" class="message-label">Message</label>
+          <textarea name="message" id="message" placeholder="Décrivez votre projet ou votre demande..." required></textarea>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer le message</button>
+        </form>
+      </div>
+      <div class="footer-right reveal-right">
+        <div class="footer-title">
+          <h3 class="title-first-name">Sidik</h3>
+          <h3 class="title-last-name">Diaby</h3>
         </div>
-        <div class="footer-right">
-            <div class="footer-title">
-                <h3 class="title-first-name">Diaby</h3>
-                <h3 class="title-last-name">Aboubacar Sidik</h3>
-            </div>
-            <div class="footer-email-intro">
-                <p>Informations</p>
-                <h6>Marcory, Abidjan, Côte d'Ivoire </h6>
-                <h3>aboubacarsidikdiaby5@gmail.com
-                    sinediaby@gmail.com</h3>
-                <!-- Calendly badge widget begin -->
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <script type="text/javascript">
-                        window.onload = function() { 
-                            Calendly.initBadgeWidget({ 
-                            url: 'https://calendly.com/aboubacarsidikdiaby5/30min', 
-                            text: 'Planifiez du temps avec moi', 
-                            color: '#25262a', 
-                            textColor: '#ffffff', 
-                            branding: true 
-                        }); 
-                    }
-                </script>
-                <!-- Calendly badge widget end -->
-                <!-- Calendly link widget begin -->
-                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/aboubacarsidikdiaby5/30min'});return false;">Planifiez du temps avec moi</a>
-                <!-- Calendly link widget end -->
-            </div>
-            <div class="footer-nav-menu">
-                <ul class="footer-menu">
-                    <li><a href="#aboutme">À propos</a></li>
-                    <li><a href="#research">Expériences</a></li>
-                    <li><a href="#education">Formation</a></li>
-                    <li><a href="#introduction">Derniers projets</a></li>
-                    <li><a href="#skill">Compétences</a></li>
-                </ul>
-            </div>
-            <div class="social-icons">
-                <a href="https://wa.me/2250101566593" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/0xsidik" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/0xSidik" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://tryhackme.com/r/p/0xSidik" target="_blank" rel="noopener noreferrer">
-                    <img src="https://tryhackme.com/img/logo/tryhackme_logo_full.svg" alt="TryHackMe" width="30" height="30">
-                </a>
-            </div>
+        <div class="footer-email-intro">
+          <p>Localisation</p>
+          <h6>Marcory, Abidjan, Côte d'Ivoire</h6>
+          <p style="margin-top:14px;">Contact</p>
+          <h3>
+            <a href="mailto:aboubacarsidikdiaby5@gmail.com">aboubacarsidikdiaby5@gmail.com</a><br>
+            <a href="mailto:sinediaby@gmail.com">sinediaby@gmail.com</a>
+          </h3>
         </div>
+        <div class="footer-nav-menu">
+          <ul class="footer-menu">
+            <li><a href="#aboutme">À propos</a></li>
+            <li><a href="#research">Expériences</a></li>
+            <li><a href="#education">Formation</a></li>
+            <li><a href="#introduction">Projets</a></li>
+            <li><a href="#skill">Compétences</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <a href="https://wa.me/2250101566593" target="_blank" rel="noopener" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/0xsidik" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/0xSidik" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://tryhackme.com/r/p/0xSidik" target="_blank" rel="noopener" title="TryHackMe">
+            <img src="https://tryhackme.com/img/logo/tryhackme_logo_full.svg" alt="TryHackMe">
+          </a>
+        </div>
+        <!-- Calendly -->
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script>window.onload=function(){Calendly.initBadgeWidget({url:'https://calendly.com/aboubacarsidikdiaby5/30min',text:'Planifiez du temps avec moi',color:'#00ff88',textColor:'#0a0b0f',branding:true});};</script>
+      </div>
     </div>
-</section>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-    <!-- <script src="script.js"></script> -->
-    <script src="script.js"></script>
-</body>
+  </section>
 
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
