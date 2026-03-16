@@ -184,4 +184,51 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ── 10. TYPING CURSOR IN HEADER ── */
   // Already handled by CSS .cursor-blink
 
+  /* ── 11. STATS AUTOMATIQUES ─────────────────────────────────
+     Expérience cumulée : somme des durées de tous les stages
+     (format ISO : "YYYY-MM" ou "YYYY-MM-DD")
+     Projets : compte les .design-card dans #introduction
+  ──────────────────────────────────────────────────────────── */
+  (function computeStats() {
+
+    /* --- Stages : modifie uniquement ces dates si tu en ajoutes --- */
+    const stages = [
+      { debut: "2025-12", fin: "2026-02" }, // ECOMET SARL
+      { debut: "2024-11", fin: "2025-02" }, // Port Autonome San Pedro
+      { debut: "2023-07", fin: "2023-12" }, // Haupt Markt
+      { debut: "2023-02", fin: "2023-05" }, // Kip Services
+    ];
+
+    /* Calcule le nombre de mois entre deux dates "YYYY-MM" */
+    function moisEntre(debut, fin) {
+      const [dy, dm] = debut.split("-").map(Number);
+      const [fy, fm] = fin.split("-").map(Number);
+      return (fy - dy) * 12 + (fm - dm);
+    }
+
+    const totalMois = stages.reduce((acc, s) => acc + moisEntre(s.debut, s.fin), 0);
+    const annees   = Math.floor(totalMois / 12);
+    const moisRest = totalMois % 12;
+
+    let label;
+    if (annees === 0) {
+      label = `${totalMois} mois`;
+    } else if (moisRest === 0) {
+      label = `${annees} an${annees > 1 ? "s" : ""}`;
+    } else {
+      label = `+${annees} an${annees > 1 ? "s" : ""}`;
+    }
+
+    const expEl = document.getElementById("stat-experience");
+    if (expEl) expEl.textContent = label;
+
+    /* --- Projets : compte les cards dans #introduction --- */
+    const projetsEl = document.getElementById("stat-projects");
+    if (projetsEl) {
+      const count = document.querySelectorAll("#introduction .design-card").length;
+      projetsEl.textContent = `+${count}`;
+    }
+
+  })();
+
 });
